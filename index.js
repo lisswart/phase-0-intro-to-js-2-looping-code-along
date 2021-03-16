@@ -1,6 +1,6 @@
 // Code your solutions in this file
 
-/*const gifts = ["teddy bear", "drone", "doll"];
+const gifts = ["teddy bear", "drone", "doll"];
 
 function wrapGifts(gifts) {
     for (let i = 0; i < gifts.length; i++) {
@@ -10,17 +10,15 @@ function wrapGifts(gifts) {
     return gifts;
 }
 
-wrapGifts(gifts);
-
 function writeCards(names, event) {
+    let messages = [];
     for (let i = 0; i < names.length; i++) {
-        console.log(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
+        messages = [...messages, `Thank you, ${names[i]}, for the wonderful ${event} gift!`];
     }
+    return messages;
 }
 
 const names = ["Lisa", "Arnoud", "Celia"];
-
-writeCards(names, "graduation");*/
 
 function countDown(integer) {
     let i = integer;
@@ -29,5 +27,3 @@ function countDown(integer) {
         i--;
     }
 }
-
-countDown(10);
